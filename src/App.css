@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
+.table {
+  margin: 0 auto 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.today {
+  border-radius: 4px;
+  background-color: #821f3d;
+  color: #fff;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.in-prev-month,
+.in-next-month {
+  opacity: 0.5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerContainer {
+
+  align-items: stretch;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  background-color: #fac924;
+ 
+}
+
+.bodyContainer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.titleContainer {
+  display: flex;
+
+}
+
+.logo{
+  margin-top: 30px;
+  padding: 0;
+  width: 190px;
+  height: 150px;
+}
+
+.titleCalendar {
+  text-align: center;
+  margin: 0;
+  padding-top: 90px;
+  padding-left: 10px;
+ 
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  word-break: break-word;
+  color: #fff;
+
+}
+.container {
+  display: flex;
+  background-color: #fff;
+}
+
+.calendarContainer {
+  text-align: center !important;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  box-sizing: inherit;
+
+  background-color: #fff;
+  color: #f05c01;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.day{
+  padding: 20px;
+}
+
+.dayTr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.dayTh {
+  border-width: 0 0 2px;
+  color: #e21414;
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+  box-sizing: inherit;
+  display: table-cell;
+  font-weight: bold;
+}
+
+.dayTd {
+  border: 1px solid #dbdbdb;
+  border-width: 0 0 1px;
+  vertical-align: top;
+}
+
+.button {
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 2.5em;
+
+  font-size: 1rem;
+  text-align: center;
+
+  background-color: #fff;
+  border-color: #dbdbdb;
+  color: #363636;
 }
 
-.App-link {
-  color: #61dafb;
+/* ModalForm */
+
+body {
+  background: #e6e6e6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  margin-top: 10px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form {
+  background: #0e101c;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* input[type="text"], textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+} */
+.inputEvent{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.inputUser {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.inputDescription {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 50px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+button,
+input[type="submit"] {
+  background: #025c4c;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  margin: 448px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+buttonForm {
+  display: block;
+  appearance: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.error {
+  color: red;
+}
+
+
+.eventTitle {
+  font-weight: 100;
+  color: rgb(60, 55, 55);
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #025c4c;;
+}
+
+.buttonCancel {
+  margin-top: 10px;
+  margin-left: 490px;
+}
+
+/* clima */
+
+.climateContainer {
+
+  text-align: center;
+  margin: 0px;
+  padding-left: 800px;
+  padding-top: -50px;
+  color: #fff;
+}
+
+.climate {
+  padding: 30px;
+  border: 5px #0e101c;
+}
+
+.titleclimate {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #fff;
 }
